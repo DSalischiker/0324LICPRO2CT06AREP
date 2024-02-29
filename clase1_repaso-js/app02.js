@@ -3,12 +3,12 @@ let subject = "Programación";
 let year = 2024;
 
 /* EJERCICIO 2 */
-let favoriteSites = ["www.hola.com", "www.chau.com", "www.comoestas.com", "www.gracias.com"];
+let favoriteSites = ["www.google.com", "www.twitter.com", "www.instagram.com", "www.facebook.com"];
 
 console.log(favoriteSites);
 favoriteSites.pop();
 console.log(favoriteSites);
-favoriteSites.push("www.denada.com");
+favoriteSites.push("www.tiktok.com");
 console.log(favoriteSites);
 
 /* EJERCICIO 3 */
