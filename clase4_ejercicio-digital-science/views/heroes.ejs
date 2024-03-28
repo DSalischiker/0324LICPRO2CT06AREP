@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <ul>
+      <% for (let i = 0; i < lista.length; i++) { %>
+        <li>
+          <h3>Heroe #<%= lista[i].id %></h3>
+          <p><%= lista[i].nombre %></p>
+          <p><%= lista[i].profesion %></p>
+          <p><%= lista[i].pais %></p>
+          <p><%= lista[i].resenia %></p>
+        </li>
+      <% } %>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <% if(heroe !== undefined) { %>
+      <% if(ok == true) { %>
+      <p>Hola, mi nombre es <%= heroe.nombre %> y esta es mi reseña: <%= heroe.resenia %>.</p>
+      <% } else { %>
+        <p>Hola, mi nombre es <%= heroe.nombre %>. Lamento que no desees saber más de mi :(.</p>
+      <% } %>
+    <% } else { %>
+      <p>No encontramos al científico/a indicado para mostrar su biografía. Por favor, elija otro id.</p>
+    <% } %>
+  </body>
+</html>
