@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= titulo %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/autos.css' />
+  </head>
+
+  <body>
+    <%- include('./partials/header') %>
+    <main>
+      <div class="contenedor">
+        <link rel='stylesheet' href='/stylesheets/autos.css' />
+        <h1 class="titulo-vista">
+          <%= titulo %>
+        </h1>
+        <ul class="contenedor-cards">
+          <% for (let i = 0; i < resultado.length; i++) { %>
+            <li class="card">
+              <h3 class="card-titulo">Auto #<%= i %></h3>
+              <p class="card-texto">
+                Marca: <strong><%= resultado[i].marca %></strong>
+              </p>
+              <p class="card-texto">
+                Color: <strong><%= resultado[i].color %></strong>
+              </p>
+              <p class="card-texto">
+                Modelo: <strong><%= resultado[i].modelo %></strong>
+              </p>
+              <p class="card-texto">
+                Año: <strong><%= resultado[i].anio %></strong>
+              </p>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+    </main>
+    <%- include('./partials/footer') %>
+  </body>
+</html>
